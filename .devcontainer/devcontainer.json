@@ -1,0 +1,28 @@
+{
+  "name": "My Java Codespace",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-test"
+      ],
+      "settings": {
+        "chat.commandCenter.enabled": false,
+        "chat.agent.enabled": false,
+        "chat.agents.enabled": false,
+        "chatAgent.enabled": false,
+        "chat.editing.enabled": false,
+        "inlineChat.enabled": false,
+        "chat.experimental.offerSetup": false,
+        "github.copilot.chat.welcomeMessage": "never",
+        "github.copilot.enable": { "*": false },
+        "workbench.secondarySideBar.visible": false
+      }
+    }
+  },
+
+  "postStartCommand": "code --uninstall-extension GitHub.copilot --force 2>/dev/null || true; code --uninstall-extension GitHub.copilot-chat --force 2>/dev/null || true; code --uninstall-extension vscode.chat --force 2>/dev/null || true"
+}
