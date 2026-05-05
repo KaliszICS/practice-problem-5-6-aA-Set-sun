@@ -68,6 +68,9 @@ class PracticeProblemTest {
       Class<?> testClass = PracticeProblem.class;
       try {
          String longStr = "a".repeat(1000);
+         // for (int i = 0; i < 1000; i++) {
+         //    longStr += "a";
+         // }
          String[] input = {longStr};
          Class<?>[] cArg = { String[].class };
          Method method = testClass.getDeclaredMethod("createLengthArray", cArg);
