@@ -66,16 +66,16 @@ class Notes {
 
 		int temp;
 
-		temp = ages[4];
-		ages[4] = ages[0];
+		temp = ages[2];
+		ages[2] = ages[0];
 		ages[0] = temp;
 
 		//Need to the same swap to our other array
 
 		String temp1;
 
-		temp1 = names[4];
-		names[4] = names[0];
+		temp1 = names[2];
+		names[2] = names[0];
 		names[0] = temp1;
 
 		//Swapped the values at index 0 and index 4 for both arrays, so the values are still parallel.
